@@ -1,0 +1,26 @@
+#txt
+{
+    display: inline;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+#Submit
+{
+    align-content: center;
+}
+#Title,#Body,#Name,#Email
+{
+    margin-left: 20%;
+}
+
+#txt1
+{
+    display: inline;
+    width: 15%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+#Submit1
+{
+    align-content: center;
+}
