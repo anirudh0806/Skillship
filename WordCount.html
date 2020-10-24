@@ -1,0 +1,72 @@
+<html>
+<div class="main">
+<br>
+<textarea id="txt" rows=24 cols=105 placeholder="Enter your text here!"></textarea>
+<br>
+
+<p>Number of words: </p><textarea id="result" type="text" rows=1 cols=8></textarea>
+<br>
+
+<button id="count_btn">COUNT</button>
+<button id="reset_btn">RESET</button>
+<br>
+<p>&copy ANIRUDH. All rights reserved.</p>
+
+</div>
+<script type="text/javascript">
+    document.getElementById("count_btn").onclick = function () {
+
+        var x = document.getElementById("txt").value;
+        var total = 0;
+        for (var i = 0; i < x.length; i++) {
+            if (x[i] == " ") {
+                total = total + 1;
+            }
+
+        }
+        total = total + 1;
+        result.value = total;
+    }
+
+    document.getElementById("reset_btn").onclick = function(){
+
+       txt.value='';
+       alert("RESET DONE!");
+    }
+</script>
+
+<style type="text/css">
+    #count_btn,#reset_btn {
+        position: relative;
+        background-color: #4CAF50;
+        border: none;
+        font-size: 22px;
+        color: #FFFFFF;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    #txt
+    {
+        border-style: solid;
+        border-color: black;
+        border-radius: 1%;
+        margin:15px;
+        font-size:large;
+    }
+   #result
+   {
+       font-size:20px;
+   }
+    .main
+    {
+        text-align: center;
+        align-items: center;
+    }
+</style>
+
+</html>

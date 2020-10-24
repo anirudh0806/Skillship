@@ -1,0 +1,74 @@
+<html>
+    <meta charset="utf-8">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        
+    </head>
+
+    <body>
+        <header class="header">
+            HEADER
+        </header>
+        <main class="main">
+            <nav class="nav">
+                SIDENAV
+            </nav>
+        
+        <article class="flex-article">
+             MAIN CONTENT 
+        </article> <textarea></textarea>
+        <article class="sidebar">
+            SIDEBAR
+        </article>
+    </main> 
+        <footer class="footer">
+            FOOTER
+        </footer>
+    </body>
+
+    <style type="text/css">
+        body{
+            font-size: 150%;
+            color:white;
+            height:10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header
+        {
+            background-color: #5070b5;
+            padding:3rem 3rem;
+        }
+        .main
+        {
+            display: flex;
+            flex: 1;
+        }
+        .nav
+        {
+            background-color: orange;
+            padding-top: 3rem;
+            flex:1 1 5rem;
+        }
+        .flex-article
+        {
+            background-color:olive;
+            padding-top: 3rem;
+            flex: 3 3;
+        }
+        .sidebar
+        {
+            background-color:skyblue;
+            padding-top: 3rem;
+        }
+        .footer
+        {
+            background-color: slateblue;
+            padding-top: 3rem;
+        }
+    </style>
+</html>
